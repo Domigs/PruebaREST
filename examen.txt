@@ -1,0 +1,68 @@
+1- Que es la inyección de dependencia y representa los tipos de inyección de dependencia
+que existen.
+
+R= Es poder pasar (inyectar) la dependencia cuando sea necesario en lugar de inicializar la dependencia (metodo).... una depependecia es conocida como metodo.
+
+2- Menciona al menos 5 patrones de diseño y para que los utilizas.
+
+R= -Abstract Factory: permite produir familias de objetos relacionados sin especificar clases concretas.
+   -Builder: Permite construir objetos complejos paso a paso.
+   -Singleton: Permite asgurarnos de que una clase tenga una istancia unica.
+   -Factory Method: nos proporciona la interfaz para crear objetos en la superxlase
+   -propertype: da el permiso de hacer una copia de los objetos que ya existen sin tener dependencia el codigo de sus clases.
+
+3- Representa y explica cada uno de los componentes de la arquitectura del framework
+Spring.
+
+acceso a datos: esto sera la base de datos o donde estara la informacion y como se accedera a ellos mediante (jdbc,orm, etc...)
+web (mvc): es el marco de desarrollo API REST es en otras palabras "front controller"
+contenedor centrar: la parte que se encargara de crear los objetos, las conexiones y ciclo de vida de ellos.
+pruebas: como tal seran las pruebas que hara el sistema, con los componentes anterioes. "funcionalidad".
+
+
+
+4- Describe para que se utilizan las siguientes anotaciones:
+@Autowired: esta anotacion se aplica a campos, metodos de "setters" yconstructores, 
+@Qualifier: es la anotacion que permite evitar confuciones de beans del mismo tipo,
+@PostConstruct: realiza la definicion de un metodo de inicilizacion de un bean, 
+@PreDestroy , 
+@Required: indica que el bean afectado debe de llenarse en el momento de la configuracion con la propiedad requerida, 
+@Bean indica que el metodo con esta notacion funciona como un ID y su respuesta sera el bean real, 
+@Configuration: Es un analogo para un archivo de cofiguracion XML, 
+@Transactional: es un metadato y quiere decir que la semantica de una interfaz debe de ser transaccional,
+@Secured trata de la seguridad de los datos y accesos, permisos, 
+@RollesAllowed, 
+@ManagedResource, 
+@ManageAttribute,
+@ManageOperation, 
+@Cacheable.
+5- Para que sirve un converter: sirve para poder transformar el tipo de una variable u objeto en otro diferente al original con el cual se creo.
+6- Que es un aspecto y describe un ejemplo de cómo lo podríamos implementar: es la funcionalidad que se aplica a multiples objetos, la forma de como  
+	se puede implementar seria la forma de llamar un metodo.
+
+
+
+7- La empresa XYZ es la encargada de administrar el reporte de incidencias de los equipos de
+cómputo, donde un operador puede dar de alta una incidencia (“definir los datos que
+consideres más importante ”), consultar incidencias por ID, por día , y por operador que
+las dio de alta , cabe mencionar que debemos tener dashboards que representen número
+de peticiones a los servicios consultados , insertados , cuantos se resolvieron , cuantos
+están abiertos.
+a. Realizar el diagrama E-R
+b. Realizar el diagrama de clases
+c. y programar un servicios rest de consulta e inserción que consideren mas
+importantes.
+
+8- Que es la arquitectura de micro servicios. la manera de creal la clase con sus controles y vistas (GET,PUT,DELETE,SET)
+
+9- Menciona para que sirve cada uno de los siguientes componentes
+a. Spring CloudConfig: proporciona soporte del lado del servidor y del cliente para l configuracion de un sistema distribuido.
+b. Eurka
+c. Ribbon
+d. Hystrix
+e. Zuul
+f. OAUT
+g. SWAGGER
+h. SPLUNK
+10- Generar una tarea ya sea con MAVEN o GRADLE para generar las clases de un WSDL del
+mismo.
